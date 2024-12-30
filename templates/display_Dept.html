@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <center>
+      <h1>EMP TABLE</h1>
+      <table border="2px">
+      <tr>
+        <th>department number</th>
+        <th>deptment name</th>
+        <th>deptment location</th>
+      </tr>
+      {% for to in LTO %}
+      <tr>
+        <td>{{to.dept_no}}</td>
+        <td>{{to.dept_name}}</td>
+        <td>{{to.dept_loc}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    </center>
+</body>
+</html>

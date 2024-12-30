@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>EMPLOYEE TABLE</h1>
+        <table border="2px">
+            <tr>
+                <th>Employee Number</th>
+                <th>Employee Name</th>
+                <th>JOB</th>
+                <th>SALARY</th>
+                <th>COMMISSION</th>
+                <th>HIREDATE</th>
+                <th>DEPT NO</th>
+                <th>MGR NUMBER</th>
+            </tr>
+            {% for to in EOP %}
+            <tr>
+               <td>{{to.empno}}</td>
+               <td>{{to.empname}}</td>
+               <td>{{to.job}}</td>
+               <td>{{to.sal}}</td>
+               <td>{{to.comm}}</td>
+               <td>{{to.hiredate}}</td>
+               <td>{{to.deptno}}</td>
+               <td>{{to.mgr}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
